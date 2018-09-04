@@ -1,0 +1,29 @@
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-section {
+  display: flex;
+  flex: 1; 
+  justify-content: center;
+}
+
+.projects-section {
+  display: flex;
+  justify-content: center;
+  flex: 1; 
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}

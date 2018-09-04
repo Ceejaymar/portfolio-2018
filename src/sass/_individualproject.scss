@@ -1,0 +1,79 @@
+.project {
+  height: 20rem;
+  width: 30rem;
+  background-size: cover;
+  border-radius: .2rem;
+
+  @media only screen and (max-width: $screen-xlarge) {
+    height: 15rem;
+    width: 25rem;
+  }
+
+  @media only screen and (max-width: $screen-large) {
+    height: 11rem;
+    width: 21rem;
+  }
+
+  @media only screen and (max-width: $screen-medium) {
+    height: 10rem;
+    width: 20rem;
+  }
+
+  &__overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 2rem;
+    background-image: linear-gradient(to top, rgba($color-black, .60), transparent, transparent);
+    transition: .3s;
+    font-weight: 600;
+    
+    &:hover {
+      background-image: linear-gradient(to top, rgba($color-black, .70));
+    }
+
+    &:hover .project__text {
+      color: $color-white;
+    }
+  }
+
+  &__text {
+    width: 70%;
+    text-align: center;
+    font-size: 1.1rem;
+    color: transparent;
+
+    @media only screen and (max-width: $screen-large) {
+      font-size: .8rem;
+    }
+
+    @media only screen and (max-width: $screen-medium) {
+      // font-size: .4rem !important;
+      width: 80%;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    margin: 0 2rem;
+    color: $color-white;
+    text-decoration: none;
+    border: 1px solid $color-white;
+    border-radius: 2px;
+    letter-spacing: .2rem;
+    transition: .3s;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-grey-dark;
+    }
+
+    @media only screen and (max-width: $screen-medium) {
+      padding: .5rem .5rem;
+    }
+  }
+}

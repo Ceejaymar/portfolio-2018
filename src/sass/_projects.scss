@@ -1,0 +1,31 @@
+.projects {
+  max-width: 100rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0rem 0 7rem 0;
+
+  @media only screen and (max-width: $screen-xlarge) {
+    max-width: 80rem;
+    padding: 3rem 0 3rem 0;
+  }
+
+  @media only screen and (max-width: $screen-large) {
+    max-width: 65rem;
+    padding: 3rem 0 3rem 0;
+  }
+
+  @media only screen and (max-width: $screen-medium) {
+    max-width: 70rem;
+    padding: 3rem 2.5rem 3rem 2.5rem;
+  }
+
+  @media only screen and (max-width: $screen-small) {
+    padding: 3rem 3rem 3rem 3rem;
+  }
+
+  &__empty {
+    flex: 1;
+  }
+}

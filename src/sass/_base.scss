@@ -1,0 +1,45 @@
+$color-white: #ffffff;
+$color-black: #000000;
+$color-grey-dark: #1E1E1E;
+$color-grey-medium: #7c7c7c;
+$color-grey-light: #d8d8d8;
+$color-tan-light: #f3f1ed;
+
+$screen-xlarge: 81.25em;   //  1300px
+$screen-large: 68.75em;     //  1100px
+$screen-medium: 65.62em;     //  1000px
+$screen-small: 46.87em;     //  750px just under ipad air screen
+$screen-smaller: 37.5em;     //  600px
+$screen-smallest: 20em;    //  320px
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10 / 16 = .625, for rems
+
+  @media only screen and (max-width: $screen-xlarge) {
+    font-size: 55% !important;
+  }
+
+  @media only screen and (max-width: $screen-medium) {
+    font-size: 40% !important;
+  }
+
+  // @media only screen and (max-width: $screen-small) {
+  //   font-size: 25% !important;
+  // } 
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
